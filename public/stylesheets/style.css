@@ -1,0 +1,14 @@
+/*sidebar*/
+.sidebar {
+	width: 60px;
+	background-color: #f50;
+	min-height: 100%;
+	position: fixed;
+}
+.sidebar-divider {
+	width: 90%;
+	min-height: 10px;
+	background: #555;
+	position: absolute;
+	margin: 0 auto;
+}
