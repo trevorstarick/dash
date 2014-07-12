@@ -1,0 +1,121 @@
+<script src="/javascripts/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/javascripts/masonry.min.js" type="text/javascript" charset="utf-8"></script>
+
+<div class="container">
+      <div class="col-xs-12">
+        <div class="tile">12</div>
+      </div>
+
+      <div class="col-xs-6">
+        <div class="tile">6</div>
+      </div>
+      <div class="col-xs-6">
+        <div class="tile">6</div>
+      </div>
+
+      <div class="col-xs-4">
+        <div class="tile">4</div>
+      </div>
+      <div class="col-xs-4">
+        <div class="tile">4</div>
+      </div>
+      <div class="col-xs-4">
+        <div class="tile">4</div>
+      </div>
+
+      <div class="col-xs-3">
+        <div class="tile">3</div>
+      </div>
+      <div class="col-xs-3">
+        <div class="tile">3</div>
+      </div>
+      <div class="col-xs-3">
+        <div class="tile">3</div>
+      </div>
+      <div class="col-xs-3">
+        <div class="tile">3</div>
+      </div>
+
+      <div class="col-xs-2">
+        <div class="tile">2</div>
+      </div>
+      <div class="col-xs-2">
+        <div class="tile">2</div>
+      </div>
+      <div class="col-xs-2">
+        <div class="tile">2</div>
+      </div>
+      <div class="col-xs-2">
+        <div class="tile">2</div>
+      </div>
+      <div class="col-xs-2">
+        <div class="tile">2</div>
+      </div>
+      <div class="col-xs-2">
+        <div class="tile">2</div>
+      </div>
+
+      <div class="col-xs-1">
+        <div class="tile">1</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="tile">1</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="tile">1</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="tile">1</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="tile">1</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="tile">1</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="tile">1</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="tile">1</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="tile">1</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="tile">1</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="tile">1</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="tile">1</div>
+      </div>
+    </div>
+
+    <script>
+  var $container = $('.tiles');
+  $container.masonry({
+    columnWidth: '.tile',
+    itemSelector: '.tile'
+  });
+  var msnry = $container.data('masonry');
+  function setTileHeight(){
+    var tile = $('.tile');
+    var height = $(document).height();
+    tile.each(function(){
+      var parent = $(this).parent();
+      var width = parent.width();
+      if (width < height/2) {
+        $(this).css('min-height',width);
+      } else {
+        $(this).css('min-height', height/2);
+      }
+    });
+  }
+  
+  setTileHeight();
+  $( window ).resize(function() {
+    setTileHeight();
+  });
+  </script>

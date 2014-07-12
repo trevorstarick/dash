@@ -1,19 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>DASH</title>
-	<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
-	<link rel="stylesheet" href="stylesheets/style.css">
-	<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <title>DASH</title>
+  <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+  {{block 'head'}}
 </head>
 <body>
-	<section>
-		<div class="sidebar">
-			<img src="images/logo.png" alt="Logo" class="logo">
-			<hr/>
-			<i class="fa fa-home fa-3x icon"></i>
-		</div>
-	</section>
+  <section id="sidebar">
+    <div class="sidebar">
+      <i class="fa fa-codepen logo"></i>
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-home fa-stack-1x"></i>
+      </span>
+      <hr />
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-share-alt fa-stack-1x"></i>
+      </span>
+      <div class="social">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-twitter fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-facebook fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-hacker-news fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-spotify fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-steam fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-share-alt fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-google-plus fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-apple fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-trello fa-stack-1x"></i>
+        </span>
+      </div>
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-code fa-stack-1x"></i>
+      </span>
+      <div class="internal">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-git fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-bar-chart-o fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-cloud fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-code fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-slack fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-database fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-sitemap fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-tachometer fa-stack-1x"></i>
+        </span>
+      </div>
+      <hr />
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-cogs fa-stack-1x"></i>
+      </span>
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-users fa-stack-1x"></i>
+      </span>
+      <div class="devices">
+        <span class="fa-stack fa-lg hidden-xs hidden-sm hidden-md">
+          <i class="fa fa-desktop fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-lg hidden-xs">
+          <i class="fa fa-laptop fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-lg hidden-md hidden-lg">
+          <i class="fa fa-tablet fa-stack-1x"></i>
+        </span>
+      </div>
+    </div>
+  </section>
+  <div id="block">
+    <section id="header">
+      <div class="message">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="cmr">
+        <i id="close" class="fa fa-times-circle"></i>
+        <!-- <i class="fa fa-minus-circle"></i> -->
+        <!-- <i class="fa fa-plus-circle"></i> -->
+      </div>
+    </section>
+    <section id="main">
+      {{{body}}}
+    </section>
+    <div class="push"></div>
+  </div>
+  <section id="footer">
+    <div class="something">Foo &middot; Bar</div>
+  </section>
+  {{block 'script'}}
 </body>
 </html>
