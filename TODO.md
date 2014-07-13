@@ -1,4 +1,5 @@
 To-Do
 =====
 
-- Better mobile and tablet support (<meta> tags)
+- [x] Better mobile and tablet support (<meta> tags)
+- [ ] Ember.js

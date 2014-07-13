@@ -35,6 +35,9 @@ body, html {
 	font-size: 3em;
 	color: #1abc9c;
 }
+.logo:hover {
+	color: #00ffcd;
+}
 .sidebar .icon {
 	margin: 10px 3px;
 	font-size: 2em;
@@ -57,12 +60,14 @@ body, html {
 	width: 60px;
 }
 .tile {
-	background-color: #f1e7ce;
-	border-radius: 5px;
+	/*background-color: #242424;*/
+	background-color: #ffffff;
+	border-radius: 1px;
 	margin-top: 11px;
 	margin-bottom: 11px;
 	padding: 5px;
-	color: #000000;
+	/*color: #ffffff;*/
+	color: #242424;
 }
 
 #sidebar {
@@ -91,7 +96,6 @@ body, html {
 	display: block;
 	background-color: #2980b9;
 	padding: 5px;
-
 }
 #header>.message {
 	display: inline-block;
