@@ -21,3 +21,15 @@ Integration
 - [ ] Google Drive
 - [ ] Google Mail
 - [ ] YouTube
+- [ ] Basecamp
+- [ ] Trello
+- [ ] Google Analytics
+- [ ] KISSmetrics
+- [ ] Mixpanel
+- [ ] Travis
+- [ ] Circle
+- [ ] Jenkins
+
+Dasboard
+--------
+https://www.geckoboard.com/
