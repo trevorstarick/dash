@@ -28,6 +28,8 @@ body, html {
 /*sidebar*/
 .sidebar {
 	text-align: center;
+	border-top: 4px solid #2980b9;
+	z-index: 999;
 }
 .sidebar .logo {
 	margin-top: 3px;
@@ -46,7 +48,7 @@ body, html {
 	width: 90%;
 	margin: 0px 3px;
 	/*border-color: #1d1d1d;*/
-	/*display: none;*/
+	display: none;
 }
 
 .social, .internal {
@@ -63,8 +65,7 @@ body, html {
 	/*background-color: #242424;*/
 	background-color: #ffffff;
 	border-radius: 1px;
-	margin-top: 11px;
-	margin-bottom: 11px;
+	margin: 11px;
 	padding: 5px;
 	/*color: #ffffff;*/
 	color: #242424;
@@ -79,7 +80,7 @@ body, html {
 	position: fixed;
 	top: 0;
 	z-index: 999;
-
+	border-right: 2px solid #505050;
 }
 
 #block {
@@ -96,6 +97,7 @@ body, html {
 	display: block;
 	background-color: #2980b9;
 	padding: 5px;
+	display: none;
 }
 #header>.message {
 	display: inline-block;
@@ -128,6 +130,7 @@ body, html {
 	vertical-align:middle;
 	font-weight: 150;
 	line-height: 30px;
+	display: none;
 }
 
 @media (max-width: 480px) {
